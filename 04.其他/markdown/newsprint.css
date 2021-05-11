@@ -158,7 +158,7 @@ h3 {
 	/*21 / 16*/
 	line-height: 1;
 	/*24 / 21*/
-	margin-top: 1em;
+	margin-top: 0.5em;
 	/*48 / 21*/
 	margin-bottom: 0.5em;
 	/*24 / 21*/
@@ -166,8 +166,9 @@ h3 {
 h4 {
 	font-size: 1.125em;
 	/*18 / 16*/
-	margin-top: 2.67em;
+	margin-top: 0.5em;
 	/*48 / 18*/
+
 }
 h5,
 h6 {
@@ -248,8 +249,10 @@ code,
 }
 
 code {
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 5px;
+	padding-bottom: 2px;
 }
 
 .md-fences {
@@ -290,7 +293,7 @@ h6 + ol {
 }
 
 li > ul,
-li > ol {
+/*li > ol {
 	margin-top: inherit;
 	margin-bottom: 0;
 }
@@ -301,7 +304,7 @@ li ol>li {
 
 li li ol>li{
 	list-style-type: lower-roman;
-}
+}*/
 
 h2,
 h3 {
@@ -619,8 +622,8 @@ input {
 }
 
 /* 自动numbering*/
-** initialize css counter */
-#write {
+
+/*#write {
     counter-reset: h1
 }
 
@@ -644,19 +647,13 @@ h5 {
     counter-reset: h6
 }
 
-/** put counter result into headings */
-/*#write h1:before {
-    counter-increment: h1;
-    content: counter(h1) ". "
-}*/
-
 #write h2:before {
     counter-increment: h2;
     content:counter(h2) ". "
 }
 
 #write h3:before,
-h3.md-focus.md-heading:before /** override the default style for focused headings */ {
+h3.md-focus.md-heading:before{
     counter-increment: h3;
     content:counter(h2) "." counter(h3) ". "
 }
@@ -679,7 +676,7 @@ h6.md-focus.md-heading:before {
     content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
 }
 
-/** override the default style for focused headings */
+
 #write>h3.md-focus:before,
 #write>h4.md-focus:before,
 #write>h5.md-focus:before,
@@ -701,4 +698,4 @@ h6.md-focus:before {
     vertical-align: inherit;
     font-weight: inherit;
     line-height: inherit;
-}
+}*/
